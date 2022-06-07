@@ -25,7 +25,7 @@ describe("literalizar html", () => {
     const resultado = document.querySelector("#resultado-div");
     expect(resultado.innerHTML).toEqual("uno");
   });
-  it("3.html si ingreso numeros del 3 al 9 me devuelve 'uno' ", () => {
+  it("3.html si ingreso numeros del 3 al 9 me devuelve el numero en literal ", () => {
       for(var i=3;i<10;i++){
         const num = document.querySelector("#numero");
         num.value=i;
@@ -37,4 +37,16 @@ describe("literalizar html", () => {
       }
 
   });
+  it("3.html si ingreso numeros del 11 al 15 me devuelve el numero en literal ", () => {
+    for(var i=11;i<16;i++){
+      const num = document.querySelector("#numero");
+      num.value=i;
+      const boton = document.querySelector("#botonliteral");
+      boton.click();
+  
+      const resultado = document.querySelector("#resultado-div");
+      expect(resultado.innerHTML).toEqual(lit.literal(i));
+    }
+
+});
 });
