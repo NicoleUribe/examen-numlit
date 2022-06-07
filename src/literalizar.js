@@ -26,7 +26,7 @@ class numeros{
     lit="nueve"
     if(num==10)
     lit="diez"
-
+    return lit
   }
 }
 export default numeros
