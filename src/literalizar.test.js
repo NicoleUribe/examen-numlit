@@ -10,4 +10,7 @@ describe("literalizar numeros", () => {
   it("3.si ingreso 2 debe devolver 'dos'", () => {
     expect(num.literal(2)).toEqual("dos");
   });
+  it("4.si ingreso 10 debe devolver 'diez'", () => {
+    expect(num.literal(2)).toEqual("diez");
+  });
 });

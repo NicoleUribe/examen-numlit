@@ -23,4 +23,5 @@ describe("literalizar html", () => {
     const resultado = document.querySelector("#resultado-div");
     expect(resultado.innerHTML).toEqual("uno");
   });
+  
 });
