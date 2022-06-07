@@ -26,6 +26,16 @@ class numeros{
     lit="nueve"
     if(num==10)
     lit="diez"
+    if(num==11)
+    lit="once"
+    if(num==12)
+    lit="doce"
+    if(num==13)
+    lit="trece"
+    if(num==14)
+    lit="catorce"
+    if(num==15)
+    lit="quince"
     return lit
   }
 }

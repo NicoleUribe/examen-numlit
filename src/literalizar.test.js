@@ -11,6 +11,9 @@ describe("literalizar numeros", () => {
     expect(num.literal(2)).toEqual("dos");
   });
   it("4.si ingreso 10 debe devolver 'diez'", () => {
-    expect(num.literal(2)).toEqual("diez");
+    expect(num.literal(10)).toEqual("diez");
+  });
+  it("5.si ingreso 15 debe devolver 'quince'", () => {
+    expect(num.literal(15)).toEqual("quince");
   });
 });
